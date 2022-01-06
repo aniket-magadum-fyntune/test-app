@@ -34,3 +34,15 @@ jobs:
       with:
         name: build
         path: build
+  
+  download:
+  
+    runs-on: self-hosted
+    
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+    
+  
